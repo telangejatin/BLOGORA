@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blogora - Stories & Ideas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Blog<span>ora</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#featured">Featured</a>
+            <a href="#latest">Latest</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="searchBtn" aria-label="Search">
+                🔍
+            </button>
+
+            <button id="themeBtn" aria-label="Change theme">
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         SEARCH BOX
+    ========================== -->
+
+    <div class="search-container" id="searchContainer">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search articles..."
+            >
+
+            <button id="closeSearch">
+                ✕
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                WELCOME TO BLOGORA
+            </p>
+
+            <h1>
+                Stories that
+                <span>inspire.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover ideas, experiences, technology,
+                lifestyle and stories from different perspectives.
+            </p>
+
+            <a href="#latest" class="explore-btn">
+                Explore Articles →
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+
+            <div class="hero-circle circle-one"></div>
+            <div class="hero-circle circle-two"></div>
+            <div class="hero-circle circle-three"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================== -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-heading">
+                    EXPLORE
+                </p>
+
+                <h2>
+                    Categories
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="category-list">
+
+            <button class="category-btn active-category" data-category="All">
+                All
+            </button>
+
+            <button class="category-btn" data-category="Technology">
+                Technology
+            </button>
+
+            <button class="category-btn" data-category="Lifestyle">
+                Lifestyle
+            </button>
+
+            <button class="category-btn" data-category="Travel">
+                Travel
+            </button>
+
+            <button class="category-btn" data-category="Education">
+                Education
+            </button>
+
+            <button class="category-btn" data-category="Business">
+                Business
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED ARTICLES
+    ========================== -->
+
+    <section class="featured" id="featured">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="small-heading">
+                    HANDPICKED
+                </p>
+
+                <h2>
+                    Featured Articles
+                </h2>
+
+            </div>
+
+            <a href="#latest" class="view-all">
+                View All →
+            </a>
+
+        </div>
+
+
+        <!-- JavaScript will insert posts here -->
+
+        <div
+            class="featured-grid"
+            id="featuredPosts">
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LATEST ARTICLES
+    ========================== -->
+
+    <section class="latest" id="latest">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="small-heading">
+                    DISCOVER
+                </p>
+
+                <h2>
+                    Latest Articles
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- JavaScript will insert posts here -->
+
+        <div
+            class="latest-grid"
+            id="latestPosts">
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NO RESULTS MESSAGE
+    ========================== -->
+
+    <div
+        class="no-results"
+        id="noResults">
+
+        <h3>
+            No articles found
+        </h3>
+
+        <p>
+            Try searching for another topic or category.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <p class="small-heading">
+                ABOUT BLOGORA
+            </p>
+
+            <h2>
+                Ideas worth reading.
+            </h2>
+
+            <p>
+                Blogora is a simple space for sharing stories,
+                ideas, knowledge and experiences. From technology
+                and education to travel and lifestyle, there is
+                something here for every curious mind.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Blog<span>ora</span>
+        </div>
+
+        <p>
+            Stories, ideas and perspectives for curious minds.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#categories">
+                Categories
+            </a>
+
+            <a href="#featured">
+                Featured
+            </a>
+
+            <a href="#latest">
+                Latest
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 Blogora. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
